@@ -41,6 +41,10 @@ main img {
   flex-direction: column;
 }
 
+.group img {
+  width: 100%;
+}
+
 .item {
   flex: 1;
   margin: 10px;
@@ -48,6 +52,7 @@ main img {
 
 .item-double {
   flex: 2;
+  align-content: center;
 }
 
 /* -------  Navigation ------- */
@@ -62,6 +67,17 @@ header {
   font-family: "Pangolin", cursive;
   font-size: 72px;
   color: #fff;
+}
+
+header nav {
+  display: flex;
+  justify-content: center;
+}
+
+header nav ul {
+  display: flex;
+  padding-left: 0;
+  list-style: none;
 }
 
 header nav ul li {
@@ -91,6 +107,7 @@ form label {
 
 form select,
 form input {
+  justify-content: flex-end;
   margin-bottom: 20px;
   width: 180px;
 }
@@ -117,3 +134,62 @@ footer p {
 }
 
 /* -------  Media Query ------- */
+
+@media all and (min-width: 600px) {
+  h1 {
+    font-size: 48px;
+    margin: 14px 0; 
+    padding-top: 0;
+  }
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 30px;
+  }
+
+  header nav {
+    margin-top: 15px;
+  }
+
+  form {
+    justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    margin: 0;
+    min-width: 600px;
+  }
+
+  form select,
+  form input,
+  form option {
+    flex: 1;
+    padding: 0px 0px 0px 0px;
+    height: 24px;
+    margin-bottom: 0;
+    width: 75%;
+  }
+
+  form label {
+    flex: 1;
+    padding: 0;
+    margin: 0;
+    font-size: 18px;
+    width: 75%;
+  }
+
+  form button {
+    flex: 1;
+    padding: 10px 0px 10px 0px;
+    font-size: 20px;
+    height: 40px;
+    width: 50%;
+    max-width: 160px;
+    margin-top: 15px;
+    margin-right: 10px;
+  }
+
+  
+}
+  
