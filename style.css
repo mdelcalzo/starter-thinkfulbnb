@@ -38,6 +38,7 @@ main img {
 
 .group {
   display: flex;
+  align-items: center;
   flex-direction: column;
 }
 
@@ -105,9 +106,9 @@ form label {
   font-weight: bold;
 }
 
+
 form select,
 form input {
-  justify-content: flex-end;
   margin-bottom: 20px;
   width: 180px;
 }
@@ -119,7 +120,8 @@ form button {
   font-size: 24px;
   padding: 15px;
   width: 100%;
-}
+} 
+
 
 /* -------  Footer ------- */
 
@@ -153,41 +155,22 @@ footer p {
   }
 
   form {
-    justify-content: space-between;
+    width: 100%;
+  }
+  
+  .form-inline {  
     display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .item-double {
+    align-content: center;
+  }
+
+  .group {
     flex-direction: row;
-    padding: 0;
-    margin: 0;
-    min-width: 600px;
-  }
-
-  form select,
-  form input,
-  form option {
-    flex: 1;
-    padding: 0px 0px 0px 0px;
-    height: 24px;
-    margin-bottom: 0;
-    width: 75%;
-  }
-
-  form label {
-    flex: 1;
-    padding: 0;
-    margin: 0;
-    font-size: 18px;
-    width: 75%;
-  }
-
-  form button {
-    flex: 1;
-    padding: 10px 0px 10px 0px;
-    font-size: 20px;
-    height: 40px;
-    width: 50%;
-    max-width: 160px;
-    margin-top: 15px;
-    margin-right: 10px;
+    width: 100%;
   }
 
   
